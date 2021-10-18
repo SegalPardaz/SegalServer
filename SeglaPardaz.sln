@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segal.Common", "Segal.Common\Segal.Common.csproj", "{CA721811-3260-4BAF-A0B8-F3A90584650C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segal.Data", "Segal.Data\Segal.Data.csproj", "{99320DD6-F28A-4F5D-9EB6-95F5799BAB68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segal.Repo", "Segal.Repo\Segal.Repo.csproj", "{5CACEC60-E022-413E-9402-7E76C1EE3137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segal.Services", "Segal.Services\Segal.Services.csproj", "{64C99F59-C202-4C76-B0AF-495CE1FCF52C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Segal.Presentation", "Segal.Presentation\Segal.Presentation.csproj", "{89A78194-A8A1-411C-A3A0-121C67B6B2BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA721811-3260-4BAF-A0B8-F3A90584650C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA721811-3260-4BAF-A0B8-F3A90584650C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA721811-3260-4BAF-A0B8-F3A90584650C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA721811-3260-4BAF-A0B8-F3A90584650C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99320DD6-F28A-4F5D-9EB6-95F5799BAB68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99320DD6-F28A-4F5D-9EB6-95F5799BAB68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99320DD6-F28A-4F5D-9EB6-95F5799BAB68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99320DD6-F28A-4F5D-9EB6-95F5799BAB68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CACEC60-E022-413E-9402-7E76C1EE3137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CACEC60-E022-413E-9402-7E76C1EE3137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CACEC60-E022-413E-9402-7E76C1EE3137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CACEC60-E022-413E-9402-7E76C1EE3137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C99F59-C202-4C76-B0AF-495CE1FCF52C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C99F59-C202-4C76-B0AF-495CE1FCF52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C99F59-C202-4C76-B0AF-495CE1FCF52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C99F59-C202-4C76-B0AF-495CE1FCF52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A78194-A8A1-411C-A3A0-121C67B6B2BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A78194-A8A1-411C-A3A0-121C67B6B2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A78194-A8A1-411C-A3A0-121C67B6B2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A78194-A8A1-411C-A3A0-121C67B6B2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA36C4D1-ACE7-4913-9C9B-159DF001E5D0}
+	EndGlobalSection
+EndGlobal
