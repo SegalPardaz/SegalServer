@@ -22,9 +22,9 @@ namespace Segal.Data.Models
         public string Address { get; set; }
 
         [Required]
-        public byte PasswordHash { get; set; }
+        public byte[] PasswordHash { get; set; }
         [Required]
-        public byte PasswordSalt { get; set; }
+        public byte[] PasswordSalt { get; set; }
 
 
         public string Gender { get; set; }

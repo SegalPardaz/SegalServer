@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Segal.Data.DatabaseContext;
-using Segal.Data.Infrastructure;
 using Segal.Data.Models;
-using Segal.Data.Repositories.Interfaces;
+using Segal.Repo.Infrastructure;
+using Segal.Repo.Repositories.Interfaces;
 
-namespace Segal.Data.Repositories.Repositories
+namespace Segal.Repo.Repositories.Repositories
 {
     public class UserRepository : Repository<User>, IUserRepository
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Segal.Data.Repositories.Repositories;
+using Segal.Repo.Repositories.Repositories;
 
-namespace Segal.Data.Infrastructure
+namespace Segal.Repo.Infrastructure
 {
     public class UnitOfWork<TContext> : IUnitOfWork<TContext> where TContext : DbContext, new()
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Segal.Data.Infrastructure
+namespace Segal.Repo.Infrastructure
 {
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
