@@ -6,7 +6,7 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\Segal.Repo\Segal.Repo.csproj"/>
+    <ProjectReference Include="..\Segal.Repo\Segal.Repo.csproj" />
   </ItemGroup>
 
   <ItemGroup>

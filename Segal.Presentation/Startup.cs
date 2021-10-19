@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Segal.Data.DatabaseContext;
+using Segal.Repo.Infrastructure;
+using Segal.Services.Interfaces;
 
 namespace Segal.Presentation
 {
@@ -27,6 +30,9 @@ namespace Segal.Presentation
         {
             services.AddControllers();
             services.AddCors();
+
+            services.AddScoped<IUnitOfWork<SegalDbContext>, UnitOfWork<SegalDbContext>>();
+            services.AddScoped<IAuthService, AuthService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

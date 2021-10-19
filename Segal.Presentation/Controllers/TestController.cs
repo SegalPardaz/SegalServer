@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Segal.Data.DatabaseContext;
 using Segal.Data.Models;
 using Segal.Repo.Infrastructure;
+using Segal.Services.Interfaces;
 
 namespace Segal.Presentation.Controllers
 {
@@ -15,12 +16,13 @@ namespace Segal.Presentation.Controllers
     public class TestController : ControllerBase
     {
         private IUnitOfWork<SegalDbContext> _db { get; set; }
+        private IAuthService _authService;
 
-        public TestController(IUnitOfWork<SegalDbContext> unitOfWork)
+        public TestController(IUnitOfWork<SegalDbContext> db, IAuthService authService)
         {
-            this._db = unitOfWork;
+            _db = db;
+            _authService = authService;
         }
-
 
         // GET: api/Test
         [HttpGet]
@@ -41,11 +43,9 @@ namespace Segal.Presentation.Controllers
 
             };
 
-            await _db.UserRepository.InsertAsync(user);
-            await _db.SaveAsync();
-            var users = await _db.UserRepository.GetAllAsync();
+          var regiterd=  await _authService.Register(user, "asda32");
 
-            return Ok(users);
+            return Ok(regiterd);
         }
 
         // GET: api/Test/5
