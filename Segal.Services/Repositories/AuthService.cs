@@ -19,13 +19,16 @@ namespace Segal.Services.Interfaces
         }
         public async Task<User> Login(string username, string password)
         {
-            throw new NotImplementedException();
+           var user=await _db.UserRepository.UserIsExist(username);
+           if (!Utilities.VrifayPasswordHash(password, user.PasswordHash, user.PasswordSalt)) return null;
+
+           return user;
         }
 
         public async Task<bool> Register(User user, string password)
         {
-            byte[] passwordHash, passwordSalt;
-            Utilities.CreatePasswordHash(password, out passwordHash, out passwordSalt);
+           byte[] passwordHash, passwordSalt;
+           Utilities.CreatePasswordHash(password, out passwordHash, out passwordSalt);
            await _db.UserRepository.InsertAsync(user);
            await _db.SaveAsync();
 

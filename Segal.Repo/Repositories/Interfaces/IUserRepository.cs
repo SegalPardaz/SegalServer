@@ -9,6 +9,6 @@ namespace Segal.Repo.Repositories.Interfaces
 {
     public interface IUserRepository : IRepository<User>
     {
-        Task<bool> UserIsExist(User user);
+        Task<User> UserIsExist(string username);
     }
 }

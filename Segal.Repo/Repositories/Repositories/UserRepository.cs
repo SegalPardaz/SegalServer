@@ -20,9 +20,11 @@ namespace Segal.Repo.Repositories.Repositories
             _dbContext = (dbContext ?? (SegalDbContext)dbContext);
         }
 
-        public async Task<bool> UserIsExist(User user)
+        public async Task<User> UserIsExist(string username)
         {
-            throw new NotImplementedException();
+            var userExist = await GetAsync(u => u.UserName == username);
+            if (userExist != null) return null;
+            return userExist;
         }
     }
 }
